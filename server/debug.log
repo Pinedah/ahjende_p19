@@ -1452,3 +1452,109 @@ _cit >= '2025-07-07' AND c.cit_cit <= '2025-07-14'
     [id_cit] => 214
 )
 
+[2025-07-15 23:02:47] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-15 23:02:47] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-15 23:02:47] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-08
+    [fecha_fin] => 2025-07-15
+)
+
+[2025-07-15 23:02:47] FILTRO CITAS - Parámetros recibidos:
+[2025-07-15 23:02:47] - fecha_inicio: 2025-07-08
+[2025-07-15 23:02:47] - fecha_fin: 2025-07-15
+[2025-07-15 23:02:47] - id_ejecutivo: null
+[2025-07-15 23:02:47] - id_plantel: null
+[2025-07-15 23:02:47] - incluir_planteles_asociados RAW: not set
+[2025-07-15 23:02:47] - incluir_planteles_asociados FINAL: false
+[2025-07-15 23:02:47] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-08
+    [fecha_fin] => 2025-07-15
+    [id_plantel] => 2
+)
+
+[2025-07-15 23:02:47] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15'
+[2025-07-15 23:02:47] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-15 23:02:47] FILTRO CITAS - Parámetros recibidos:
+[2025-07-15 23:02:47] - fecha_inicio: 2025-07-08
+[2025-07-15 23:02:47] - fecha_fin: 2025-07-15
+[2025-07-15 23:02:47] - Citas encontradas: 71
+[2025-07-15 23:02:47] - id_plantel: 2
+[2025-07-15 23:02:47] - incluir_planteles_asociados RAW: not set
+[2025-07-15 23:02:47] - incluir_planteles_asociados FINAL: false
+[2025-07-15 23:02:47] - Filtro por plantel: 2
+[2025-07-15 23:02:47] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15' AND e.id_pla = 2
+[2025-07-15 23:02:47] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15' AND e.id_pla = 2
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-15 23:02:47] - Citas encontradas: 20
+[2025-07-15 23:02:49] REQUEST recibido: Array
+(
+    [action] => obtener_estructura_tabla
+)
+
+[2025-07-15 23:02:50] REQUEST recibido: Array
+(
+    [action] => obtener_ejecutivos
+)
+
+[2025-07-15 23:02:50] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-08
+    [fecha_fin] => 2025-07-15
+)
+
+[2025-07-15 23:02:50] REQUEST recibido: Array
+(
+    [action] => obtener_citas
+    [fecha_inicio] => 2025-07-08
+    [fecha_fin] => 2025-07-15
+    [id_plantel] => 2
+)
+
+[2025-07-15 23:02:50] - fecha_inicio: 2025-07-08
+[2025-07-15 23:02:50] - fecha_fin: 2025-07-15
+[2025-07-15 23:02:50] - id_ejecutivo: null
+[2025-07-15 23:02:50] - id_plantel: null
+[2025-07-15 23:02:50] - incluir_planteles_asociados RAW: not set
+[2025-07-15 23:02:50] - incluir_planteles_asociados FINAL: false
+[2025-07-15 23:02:50] FILTRO CITAS - Parámetros recibidos:
+[2025-07-15 23:02:50] - fecha_inicio: 2025-07-08
+[2025-07-15 23:02:50] - fecha_fin: 2025-07-15
+[2025-07-15 23:02:50] - id_ejecutivo: null
+[2025-07-15 23:02:50] - id_plantel: 2
+[2025-07-15 23:02:50] - incluir_planteles_asociados RAW: not set
+[2025-07-15 23:02:50] - incluir_planteles_asociados FINAL: false
+[2025-07-15 23:02:50] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15'
+[2025-07-15 23:02:50] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15'
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-15 23:02:50] - Filtro por plantel: 2
+[2025-07-15 23:02:50] - WHERE clause: c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15' AND e.id_pla = 2
+[2025-07-15 23:02:50] - Citas encontradas: 71
+[2025-07-15 23:02:50] - Query final: SELECT c.id_cit, c.cit_cit, c.hor_cit, c.nom_cit, c.tel_cit, c.id_eje2, c.eli_cit, e.nom_eje 
+					 FROM cita c
+					 LEFT JOIN ejecutivo e ON c.id_eje2 = e.id_eje
+					 WHERE c.eli_cit = 1 AND c.cit_cit >= '2025-07-08' AND c.cit_cit <= '2025-07-15' AND e.id_pla = 2
+					 ORDER BY c.cit_cit ASC, c.hor_cit ASC
+[2025-07-15 23:02:50] - Citas encontradas: 20

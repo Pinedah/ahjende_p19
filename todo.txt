@@ -17,3 +17,16 @@ Se necesita generar una estructura escalable para la gestión de citas en cuanto
 Feedback visual:
 •⁠  ⁠Pintar el elemento cambiado y ligeramente desvanecer para ilustrar el cambio efectuado ✨
 •⁠  ⁠Adicionalmente desplegar un badge tipo success con el evento efectuado ✅
+
+
+-----------------
+
+📌 p20 - Websockets en EJECUTIVOS  
+Es esencialmente lo mismo que el módulo previo, pero ahora abordado en EJECUTIVOS 👥.
+
+Funcionalidad requerida:
+Se necesita generar una estructura escalable para la gestión de ejecutivos en cuanto a altas, bajas, cambios, donde si un ejecutivo_a realiza un movimiento, éste se refleje para los demás ejecutivos con dicha visualización desplegada 🔄.
+
+Feedback visual:
+•⁠  ⁠Pintar el campo modificado y ligeramente desvanecer para ilustrar el cambio efectuado ✨
+•⁠  ⁠Adicionalmente desplegar un badge tipo success con el evento efectuado ✅
