@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Test WebSocket Simple</h1>
+    <input type="text" name="" id="mensaje">
+    <button onclick="enviar()">Enviar</button>
+    <div id="log"></div>
+
+    <script>
+        const socket = new WebSocket('wss://socket.ahjende.com/wss/?encoding=text');
+        
+        socket.onopen = () => {
+            document.getElementById('log').innerHTML += '<p>✅ Conectado</p>';
+        };
+        
+        socket.onmessage = (event) => {
+            document.getElementById('log').innerHTML += '<p>📨 ' + event.data + '</p>';
+        };
+        
+        function enviar() {
+            let msj = document.getElementById("mensaje");
+            socket.send(JSON.stringify({
+                mensaje: msj.value
+            }));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+📌 p19 - Websockets en CITAS  
+Se actualizó recientemente el STANDARDS-SICAM con la sección de Websocket en la parte inferior 📡.
+
+Probar:
+•⁠  ⁠*Ejemplo 1*: Prueba básica
+•⁠  ⁠*Ejemplo 2*: WebSocket + Handsontable
+•⁠  ⁠*Ejemplo 3*: Prueba de Bucle Infinito
+
+Con el siguiente websocket:
+
+wss://socket.ahjende.com/wss/?encoding=text
+
+
+Funcionalidad requerida:
+Se necesita generar una estructura escalable para la gestión de citas en cuanto a altas, bajas, cambios, donde si un ejecutivo_a realiza un cambio en un campo de la fila, éste se refleje para los demás ejecutivos con dicha visualización desplegada específicamente en el campo que se modificó 🔄.
+
+Feedback visual:
+•⁠  ⁠Pintar el elemento cambiado y ligeramente desvanecer para ilustrar el cambio efectuado ✨
+•⁠  ⁠Adicionalmente desplegar un badge tipo success con el evento efectuado ✅
